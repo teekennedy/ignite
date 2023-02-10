@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://5twf5xgnfqx"]
+
+[ext_resource type="PackedScene" uid="uid://d4dbg7etw5q8k" path="res://LowPoly Environment Pack/Grass_2.fbx" id="1_6pt52"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Grass_2" parent="." instance=ExtResource("1_6pt52")]
+transform = Transform3D(0.920991, 0, 0, 0, 0.920991, 0, 0, 0, 0.920991, 0, 0, 0)

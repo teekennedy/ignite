@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dt6g5750s4hvo"
+path="res://.godot/imported/Pine_Tree_1_Autumn.obj-7cad5b6a7a98d373daa9f2bdeb85e727.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Pine_Tree_1_Autumn.obj-7cad5b6a7a98d373daa9f2bdeb85e727.mesh"]
+
+source_file="res://Nature Pack Low Poly By RgsDev/OBJ/Trees/Pine_Tree_1_Autumn.obj"
+dest_files=["res://.godot/imported/Pine_Tree_1_Autumn.obj-7cad5b6a7a98d373daa9f2bdeb85e727.mesh", "res://.godot/imported/Pine_Tree_1_Autumn.obj-7cad5b6a7a98d373daa9f2bdeb85e727.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

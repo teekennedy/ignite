@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://b0mv5n3ubbjsu"
+path="res://.godot/imported/Low_Poly_Forest_fence08.obj-95482598c850192b0f87d4cc583ec893.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Low_Poly_Forest_fence08.obj-95482598c850192b0f87d4cc583ec893.mesh"]
+
+source_file="res://Low_Poly_Forest_Pack_Devilswork.Shop_v02/OBJ/Low_Poly_Forest_fence08.obj"
+dest_files=["res://.godot/imported/Low_Poly_Forest_fence08.obj-95482598c850192b0f87d4cc583ec893.mesh", "res://.godot/imported/Low_Poly_Forest_fence08.obj-95482598c850192b0f87d4cc583ec893.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

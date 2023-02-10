@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://bmdbytl7d7tr"]
+
+[ext_resource type="PackedScene" uid="uid://ce3r0bo44w6np" path="res://Just Survive/FBX/Paddle.fbx" id="1_m2cvp"]
+
+[sub_resource type="ORMMaterial3D" id="ORMMaterial3D_2vvb0"]
+albedo_color = Color(0.741176, 0.545098, 0.364706, 1)
+
+[node name="Paddle" type="Node3D"]
+transform = Transform3D(-0.000104709, -1, 0, 1, -0.000104709, 0, 0, 0, 1, 0, 0, 0)
+
+[node name="Paddle" parent="." instance=ExtResource("1_m2cvp")]
+
+[node name="Paddle" parent="Paddle/RootNode" index="0"]
+material_override = SubResource("ORMMaterial3D_2vvb0")
+
+[editable path="Paddle"]

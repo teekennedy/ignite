@@ -1,0 +1,52 @@
+[gd_scene load_steps=9 format=3 uid="uid://b448ony8lifo3"]
+
+[ext_resource type="PackedScene" uid="uid://dj47yfmo8pscu" path="res://Just Survive/FBX/TentGreen.fbx" id="1_7ygrl"]
+
+[sub_resource type="ORMMaterial3D" id="ORMMaterial3D_sv6lb"]
+
+[sub_resource type="ORMMaterial3D" id="ORMMaterial3D_w62j5"]
+
+[sub_resource type="ORMMaterial3D" id="ORMMaterial3D_1d2pu"]
+cull_mode = 2
+albedo_color = Color(0.368755, 0.470888, 0.552404, 1)
+
+[sub_resource type="ORMMaterial3D" id="ORMMaterial3D_r47yt"]
+albedo_color = Color(0.380392, 0.47451, 0.509804, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qofqu"]
+
+[sub_resource type="ORMMaterial3D" id="ORMMaterial3D_33kdl"]
+albedo_color = Color(0.270588, 0.270588, 0.270588, 1)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_pn1g7"]
+points = PackedVector3Array(-1.25, 0, -1.5, 1.25, 0, -1.5, 1.25, 0, 1.5, -1.25, 0, 1.5, -1.25, 1.5, 0, 1.25, 1.5, 0)
+
+[node name="tent" type="StaticBody3D"]
+collision_layer = 4
+collision_mask = 0
+
+[node name="TentGreen" parent="." instance=ExtResource("1_7ygrl")]
+
+[node name="Cube" parent="TentGreen/RootNode" index="0"]
+material_override = SubResource("ORMMaterial3D_sv6lb")
+
+[node name="Cube001" parent="TentGreen/RootNode" index="1"]
+material_override = SubResource("ORMMaterial3D_w62j5")
+
+[node name="Plane" parent="TentGreen/RootNode" index="2"]
+transform = Transform3D(100, -3.8147e-06, -9.09495e-13, 0, -1.19209e-05, 100, -7.62939e-06, -100, -1.19209e-05, -0.000498956, 0.00788271, 0.000179345)
+material_override = SubResource("ORMMaterial3D_1d2pu")
+
+[node name="Plane001" parent="TentGreen/RootNode" index="3"]
+material_override = SubResource("ORMMaterial3D_r47yt")
+
+[node name="Cube003" parent="TentGreen/RootNode" index="4"]
+material_override = SubResource("StandardMaterial3D_qofqu")
+
+[node name="Cube012" parent="TentGreen/RootNode" index="5"]
+material_override = SubResource("ORMMaterial3D_33kdl")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("ConvexPolygonShape3D_pn1g7")
+
+[editable path="TentGreen"]

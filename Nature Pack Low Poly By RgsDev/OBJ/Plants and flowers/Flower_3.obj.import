@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://vs3mr3m8843"
+path="res://.godot/imported/Flower_3.obj-161444536479ac70ea7b2df966888706.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Flower_3.obj-161444536479ac70ea7b2df966888706.mesh"]
+
+source_file="res://Nature Pack Low Poly By RgsDev/OBJ/Plants and flowers/Flower_3.obj"
+dest_files=["res://.godot/imported/Flower_3.obj-161444536479ac70ea7b2df966888706.mesh", "res://.godot/imported/Flower_3.obj-161444536479ac70ea7b2df966888706.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

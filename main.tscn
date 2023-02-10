@@ -1,0 +1,62 @@
+[gd_scene load_steps=9 format=3 uid="uid://dxyfvpcev13o"]
+
+[ext_resource type="Texture2D" uid="uid://bdyqoyqxqkda8" path="res://Low_Poly_Forest_Pack_Devilswork.Shop_v02/tex/ground.png" id="1_eatmn"]
+[ext_resource type="Script" path="res://scripts/CameraJoint.gd" id="2_g6knp"]
+[ext_resource type="PackedScene" uid="uid://1va4oskro6q8" path="res://scenes/ForestScene.tscn" id="8_kuf8d"]
+[ext_resource type="PackedScene" uid="uid://dg235sfv6rr2q" path="res://scenes/player.tscn" id="13_artm5"]
+
+[sub_resource type="ORMMaterial3D" id="ORMMaterial3D_geyhk"]
+albedo_color = Color(1, 0.533333, 0.521569, 1)
+albedo_texture = ExtResource("1_eatmn")
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_s4ebo"]
+size = Vector2(1000, 1000)
+
+[sub_resource type="Sky" id="Sky_nv6i0"]
+
+[sub_resource type="Environment" id="Environment_6c7ri"]
+background_mode = 1
+background_color = Color(0.0117647, 0.0588235, 0.121569, 1)
+sky = SubResource("Sky_nv6i0")
+ambient_light_color = Color(0.376471, 0.470588, 0.6, 1)
+ambient_light_energy = 0.0
+reflected_light_source = 2
+tonemap_exposure = 0.83
+glow_enabled = true
+fog_light_color = Color(0.0117647, 0.0627451, 0.133333, 1)
+fog_light_energy = 0.67
+volumetric_fog_enabled = true
+volumetric_fog_density = 0.0112
+volumetric_fog_length = 23.93
+
+[node name="Main" type="Node"]
+
+[node name="Player" parent="." instance=ExtResource("13_artm5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.39623, 0, 0.332963)
+collision_mask = 6
+
+[node name="CameraJoint" type="SpringArm3D" parent="Player"]
+transform = Transform3D(0.346936, 0.396369, -0.850015, 0, 0.906308, 0.422618, 0.937889, -0.146621, 0.31443, 0, 0, 0)
+collision_mask = 6
+spring_length = 2.5
+margin = 1.0
+script = ExtResource("2_g6knp")
+
+[node name="PlayerCamera" type="Camera3D" parent="Player/CameraJoint"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 0.999999, 0, 0, 0)
+current = true
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.938669, 0.154077, 0.30848, 0.342638, 0.316336, 0.884607, 0.0387146, 0.936051, -0.349728, 66.5216, 36.0451, -19.5669)
+light_color = Color(0.301811, 0.483888, 0.676549, 1)
+shadow_enabled = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+material_override = SubResource("ORMMaterial3D_geyhk")
+mesh = SubResource("PlaneMesh_s4ebo")
+skeleton = NodePath("")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_6c7ri")
+
+[node name="ForestScene" parent="." instance=ExtResource("8_kuf8d")]

@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://bqbci07iyvow2"]
+
+[ext_resource type="PackedScene" uid="uid://dnj22hq3pxgbk" path="res://LowPoly Environment Pack/Rock_4.fbx" id="1_1smjy"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_g7ko5"]
+radius = 0.92643
+
+[node name="Rock 2" type="StaticBody3D"]
+collision_layer = 4
+collision_mask = 0
+
+[node name="Rock_4" parent="." instance=ExtResource("1_1smjy")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.100123, 0, -0.0556744)
+shape = SubResource("SphereShape3D_g7ko5")

@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://cc4lv8y6bghyg"]
+
+[ext_resource type="PackedScene" uid="uid://mjvplh4cl3vh" path="res://Just Survive/FBX/Boat.fbx" id="1_xwn4g"]
+
+[sub_resource type="ORMMaterial3D" id="ORMMaterial3D_rysp3"]
+albedo_color = Color(0.741176, 0.545098, 0.364706, 1)
+
+[sub_resource type="ORMMaterial3D" id="ORMMaterial3D_n1duc"]
+albedo_color = Color(0.721569, 0.72549, 0.729412, 1)
+
+[node name="Boat" type="Node3D"]
+
+[node name="Boat" parent="." instance=ExtResource("1_xwn4g")]
+
+[node name="Boat" parent="Boat/RootNode" index="0"]
+material_override = SubResource("ORMMaterial3D_rysp3")
+
+[node name="Engine" parent="Boat/RootNode" index="1"]
+material_override = SubResource("ORMMaterial3D_n1duc")
+
+[editable path="Boat"]

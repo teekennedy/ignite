@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://b75f2pdtp7oyn"
+path="res://.godot/imported/Grass_2_Snow.obj-d9c6d129e977c8212eae2410faf5120d.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Grass_2_Snow.obj-d9c6d129e977c8212eae2410faf5120d.mesh"]
+
+source_file="res://Nature Pack Low Poly By RgsDev/OBJ/Bushes/Grass_2_Snow.obj"
+dest_files=["res://.godot/imported/Grass_2_Snow.obj-d9c6d129e977c8212eae2410faf5120d.mesh", "res://.godot/imported/Grass_2_Snow.obj-d9c6d129e977c8212eae2410faf5120d.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

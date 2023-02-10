@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cds148c3fm8if"
+path="res://.godot/imported/Bush_3.obj-48adc12943f602c724aec1959c13364b.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Bush_3.obj-48adc12943f602c724aec1959c13364b.mesh"]
+
+source_file="res://Nature Pack Low Poly By RgsDev/OBJ/Bushes/Bush_3.obj"
+dest_files=["res://.godot/imported/Bush_3.obj-48adc12943f602c724aec1959c13364b.mesh", "res://.godot/imported/Bush_3.obj-48adc12943f602c724aec1959c13364b.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

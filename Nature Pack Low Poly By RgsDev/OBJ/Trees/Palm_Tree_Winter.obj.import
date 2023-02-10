@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dx5huxd6xx4a2"
+path="res://.godot/imported/Palm_Tree_Winter.obj-7afaa16aeecfd748d09e2231459a937d.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Palm_Tree_Winter.obj-7afaa16aeecfd748d09e2231459a937d.mesh"]
+
+source_file="res://Nature Pack Low Poly By RgsDev/OBJ/Trees/Palm_Tree_Winter.obj"
+dest_files=["res://.godot/imported/Palm_Tree_Winter.obj-7afaa16aeecfd748d09e2231459a937d.mesh", "res://.godot/imported/Palm_Tree_Winter.obj-7afaa16aeecfd748d09e2231459a937d.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

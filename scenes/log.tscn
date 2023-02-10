@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://br1xwdblorj48"]
+
+[ext_resource type="PackedScene" uid="uid://1m45jr3fbg27" path="res://Just Survive/FBX/TreeTrunk1.fbx" id="1_26641"]
+
+[sub_resource type="ORMMaterial3D" id="ORMMaterial3D_tmhij"]
+albedo_color = Color(0.541176, 0.313726, 0.160784, 1)
+
+[node name="Log" type="Node3D"]
+
+[node name="TreeTrunk1" parent="." instance=ExtResource("1_26641")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.206083, -1.19209e-07, 0.356138)
+
+[node name="Cube" parent="TreeTrunk1/RootNode" index="0"]
+material_override = SubResource("ORMMaterial3D_tmhij")
+
+[editable path="TreeTrunk1"]

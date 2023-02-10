@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=3 uid="uid://26hx25gomsmc"]
+
+[ext_resource type="PackedScene" uid="uid://dsm4kcjl7b2r2" path="res://Just Survive/FBX/SleepingBag.fbx" id="1_7d2a7"]
+
+[sub_resource type="ORMMaterial3D" id="ORMMaterial3D_pccms"]
+albedo_color = Color(0.396078, 0.282353, 0.376471, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0fswv"]
+size = Vector3(0.766129, 0.0629909, 1.29013)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_lr04v"]
+size = Vector3(0.750707, 0.0416503, 0.491183)
+
+[node name="sleepingbag" type="StaticBody3D"]
+collision_layer = 4
+collision_mask = 0
+
+[node name="SleepingBag" parent="." instance=ExtResource("1_7d2a7")]
+
+[node name="Plane001" parent="SleepingBag/RootNode" index="0"]
+material_override = SubResource("ORMMaterial3D_pccms")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0318202, 0.188864)
+shape = SubResource("BoxShape3D_0fswv")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0190335, -0.693079)
+shape = SubResource("BoxShape3D_lr04v")
+
+[editable path="SleepingBag"]

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://crlw86df6mr0r"
+path="res://.godot/imported/Broken_Tree_Winter.obj-14090b5d0729bb9758ef8c5f635b1b9e.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Broken_Tree_Winter.obj-14090b5d0729bb9758ef8c5f635b1b9e.mesh"]
+
+source_file="res://Nature Pack Low Poly By RgsDev/OBJ/Trees/Broken_Tree_Winter.obj"
+dest_files=["res://.godot/imported/Broken_Tree_Winter.obj-14090b5d0729bb9758ef8c5f635b1b9e.mesh", "res://.godot/imported/Broken_Tree_Winter.obj-14090b5d0729bb9758ef8c5f635b1b9e.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

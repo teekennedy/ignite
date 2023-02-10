@@ -1,0 +1,114 @@
+[gd_scene load_steps=13 format=3 uid="uid://bgudyf2iakgpi"]
+
+[ext_resource type="PackedScene" uid="uid://06hwepbrqeah" path="res://LowPoly Environment Pack/Mounting_2.fbx" id="1_vbgs3"]
+[ext_resource type="PackedScene" uid="uid://b4jyov5sr8eo2" path="res://LowPoly Environment Pack/Mounting_1.fbx" id="2_3qmft"]
+
+[sub_resource type="ORMMaterial3D" id="ORMMaterial3D_0go4v"]
+albedo_color = Color(0.411765, 0.486275, 0.521569, 1)
+
+[sub_resource type="ORMMaterial3D" id="ORMMaterial3D_0fwb0"]
+albedo_color = Color(0.443137, 0.545098, 0.52549, 1)
+
+[sub_resource type="ORMMaterial3D" id="ORMMaterial3D_mok4k"]
+albedo_color = Color(0.443137, 0.545098, 0.52549, 1)
+
+[sub_resource type="ORMMaterial3D" id="ORMMaterial3D_4cvut"]
+albedo_color = Color(0.443137, 0.545098, 0.52549, 1)
+
+[sub_resource type="ORMMaterial3D" id="ORMMaterial3D_hh3o8"]
+albedo_color = Color(0.443137, 0.545098, 0.52549, 1)
+
+[sub_resource type="ORMMaterial3D" id="ORMMaterial3D_8g7ow"]
+albedo_color = Color(0.443137, 0.545098, 0.52549, 1)
+
+[sub_resource type="ORMMaterial3D" id="ORMMaterial3D_ks2ku"]
+albedo_color = Color(0.443137, 0.545098, 0.52549, 1)
+
+[sub_resource type="ORMMaterial3D" id="ORMMaterial3D_v31p6"]
+albedo_color = Color(0.443137, 0.545098, 0.52549, 1)
+
+[sub_resource type="ORMMaterial3D" id="ORMMaterial3D_act8o"]
+albedo_color = Color(0.443137, 0.545098, 0.52549, 1)
+
+[sub_resource type="ORMMaterial3D" id="ORMMaterial3D_s8aq8"]
+albedo_color = Color(0.443137, 0.545098, 0.52549, 1)
+
+[node name="Mountainpass" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.1574, -1.55264, 4.4358)
+
+[node name="Mounting_2" parent="." instance=ExtResource("1_vbgs3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.612696, 0, 1.10248)
+
+[node name="Mounting_2" parent="Mounting_2/RootNode" index="0"]
+material_override = SubResource("ORMMaterial3D_0go4v")
+
+[node name="Mounting_1" parent="." instance=ExtResource("2_3qmft")]
+transform = Transform3D(-0.960522, 0, 0.278203, 0, 1, 0, -0.278203, 0, -0.960522, 2.59623, 0.119799, -9.03369)
+
+[node name="Mounting_1" parent="Mounting_1/RootNode" index="0"]
+material_override = SubResource("ORMMaterial3D_0fwb0")
+
+[node name="Node3D" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.594734, 0.407862, 19.5425)
+
+[node name="Mounting_2" parent="Node3D" instance=ExtResource("1_vbgs3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.612696, 0, 1.10248)
+
+[node name="Mounting_2" parent="Node3D/Mounting_2/RootNode" index="0"]
+material_override = SubResource("ORMMaterial3D_mok4k")
+
+[node name="Mounting_1" parent="Node3D" instance=ExtResource("2_3qmft")]
+transform = Transform3D(-0.960522, 0, 0.278203, 0, 1, 0, -0.278203, 0, -0.960522, 2.59623, 0.119799, -9.03369)
+
+[node name="Mounting_1" parent="Node3D/Mounting_1/RootNode" index="0"]
+material_override = SubResource("ORMMaterial3D_4cvut")
+
+[node name="Node3D2" type="Node3D" parent="."]
+transform = Transform3D(0.992224, 0, 0.124467, 0, 1, 0, -0.124467, 0, 0.992224, -3.60109, -0.450681, 32.4769)
+
+[node name="Mounting_2" parent="Node3D2" instance=ExtResource("1_vbgs3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.96578, 0, 1.42593)
+
+[node name="Mounting_2" parent="Node3D2/Mounting_2/RootNode" index="0"]
+material_override = SubResource("ORMMaterial3D_hh3o8")
+
+[node name="Mounting_1" parent="Node3D2" instance=ExtResource("2_3qmft")]
+transform = Transform3D(-0.960522, 0, 0.278203, 0, 1, 0, -0.278203, 0, -0.960522, 5.29855, 0.119799, 11.034)
+
+[node name="Mounting_1" parent="Node3D2/Mounting_1/RootNode" index="0"]
+material_override = SubResource("ORMMaterial3D_8g7ow")
+
+[node name="Mounting_3" parent="." instance=ExtResource("1_vbgs3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.4723, -0.391688, 45.4427)
+
+[node name="Mounting_2" parent="Mounting_3/RootNode" index="0"]
+material_override = SubResource("ORMMaterial3D_ks2ku")
+
+[node name="Mounting_4" parent="." instance=ExtResource("2_3qmft")]
+transform = Transform3D(-0.146515, 0, 0.989208, 0, 1, 0, -0.989208, 0, -0.146515, 17.7168, -0.286631, 49.408)
+
+[node name="Mounting_1" parent="Mounting_4/RootNode" index="0"]
+material_override = SubResource("ORMMaterial3D_v31p6")
+
+[node name="Mounting_5" parent="." instance=ExtResource("1_vbgs3")]
+transform = Transform3D(0.869176, 0, -0.494503, 0, 1, 0, 0.494503, 0, 0.869176, 27.1464, -0.640596, 54.0669)
+
+[node name="Mounting_2" parent="Mounting_5/RootNode" index="0"]
+material_override = SubResource("ORMMaterial3D_act8o")
+
+[node name="Mounting_6" parent="." instance=ExtResource("2_3qmft")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 37.4375, -0.909352, 59.1698)
+
+[node name="Mounting_1" parent="Mounting_6/RootNode" index="0"]
+material_override = SubResource("ORMMaterial3D_s8aq8")
+
+[editable path="Mounting_2"]
+[editable path="Mounting_1"]
+[editable path="Node3D/Mounting_2"]
+[editable path="Node3D/Mounting_1"]
+[editable path="Node3D2/Mounting_2"]
+[editable path="Node3D2/Mounting_1"]
+[editable path="Mounting_3"]
+[editable path="Mounting_4"]
+[editable path="Mounting_5"]
+[editable path="Mounting_6"]

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dk7riu0rjlm3g"
+path="res://.godot/imported/Palm_Tree_Dead.obj-f263b4156238609297fac0355db0ce3a.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Palm_Tree_Dead.obj-f263b4156238609297fac0355db0ce3a.mesh"]
+
+source_file="res://Nature Pack Low Poly By RgsDev/OBJ/Trees/Palm_Tree_Dead.obj"
+dest_files=["res://.godot/imported/Palm_Tree_Dead.obj-f263b4156238609297fac0355db0ce3a.mesh", "res://.godot/imported/Palm_Tree_Dead.obj-f263b4156238609297fac0355db0ce3a.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

@@ -1,0 +1,32 @@
+[gd_resource type="ParticleProcessMaterial" load_steps=7 format=3 uid="uid://tpdyd0x77gcx"]
+
+[sub_resource type="Gradient" id="Gradient_v8h4w"]
+interpolation_mode = 2
+colors = PackedColorArray(0.51, 0.068, 0, 1, 1, 0.7125, 0.25, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_3uwvs"]
+gradient = SubResource("Gradient_v8h4w")
+
+[sub_resource type="Curve" id="Curve_bq0ih"]
+_data = [Vector2(0, 1), 0.0, -0.573371, 0, 0, Vector2(0.5, 0.619632), -1.2454, -0.440106, 0, 0, Vector2(0.82967, 0), -2.76908, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="CurveTexture" id="CurveTexture_q7p3u"]
+curve = SubResource("Curve_bq0ih")
+
+[sub_resource type="Curve" id="Curve_3wjfv"]
+_data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(1, 0.539877), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_85u48"]
+curve = SubResource("Curve_3wjfv")
+
+[resource]
+direction = Vector3(0, 1, 0)
+spread = 55.75
+gravity = Vector3(0, 1, 0)
+scale_curve = SubResource("CurveTexture_q7p3u")
+color_ramp = SubResource("GradientTexture1D_3uwvs")
+turbulence_enabled = true
+turbulence_influence_over_life = SubResource("CurveTexture_85u48")
+attractor_interaction_enabled = false

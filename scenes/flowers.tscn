@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3 uid="uid://6tcl3gisqf4u"]
+
+[ext_resource type="PackedScene" uid="uid://cjun5dqof8ah6" path="res://Just Survive/FBX/Plant003.fbx" id="1_cgtre"]
+[ext_resource type="Texture2D" uid="uid://cbpjbsg75muo6" path="res://Just Survive/Textures/T_Flowers.png" id="2_0v2fk"]
+
+[sub_resource type="ORMMaterial3D" id="ORMMaterial3D_1rq6v"]
+transparency = 1
+albedo_texture = ExtResource("2_0v2fk")
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_xl8bd"]
+radius = 0.123989
+
+[node name="flowers" type="StaticBody3D"]
+collision_layer = 2
+collision_mask = 0
+
+[node name="Plant003" parent="." instance=ExtResource("1_cgtre")]
+
+[node name="Plant" parent="Plant003/RootNode" index="0"]
+material_override = SubResource("ORMMaterial3D_1rq6v")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("SphereShape3D_xl8bd")
+
+[editable path="Plant003"]

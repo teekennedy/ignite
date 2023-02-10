@@ -1,0 +1,30 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://cewj4lhxi6dvs"
+path="res://.godot/imported/Rock_1.fbx-643b281558819ed01e42f94d5dd81f13.scn"
+
+[deps]
+
+source_file="res://Nature Pack Low Poly By RgsDev/FBX/Rocks/Rock_1.fbx"
+dest_files=["res://.godot/imported/Rock_1.fbx-643b281558819ed01e42f94d5dd81f13.scn"]
+
+[params]
+
+nodes/root_type="Node3D"
+nodes/root_name="Scene Root"
+nodes/apply_root_scale=true
+nodes/root_scale=1.0
+meshes/ensure_tangents=true
+meshes/generate_lods=true
+meshes/create_shadow_meshes=true
+meshes/light_baking=1
+meshes/lightmap_texel_size=0.2
+skins/use_named_skins=true
+animation/import=true
+animation/fps=30
+animation/trimming=false
+import_script/path=""
+_subresources={}

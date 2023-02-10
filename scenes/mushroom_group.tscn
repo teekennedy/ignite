@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://br6m6dy0ugqlr"]
+
+[ext_resource type="PackedScene" uid="uid://ba7arqyfjqa63" path="res://Just Survive/FBX/Mushroom002.fbx" id="1_hjbvg"]
+
+[sub_resource type="ORMMaterial3D" id="ORMMaterial3D_m3ljn"]
+albedo_color = Color(1, 0.745098, 0, 1)
+
+[node name="MushroomGroup" type="Node3D"]
+transform = Transform3D(2.01711, 0, 0, 0, 2.01711, 0, 0, 0, 2.01711, 0, 0, 0)
+
+[node name="Mushroom002" parent="." instance=ExtResource("1_hjbvg")]
+
+[node name="Mushroom" parent="Mushroom002/RootNode" index="0"]
+material_override = SubResource("ORMMaterial3D_m3ljn")
+
+[editable path="Mushroom002"]

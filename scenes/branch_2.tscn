@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://bjqigst2t5xv5"]
+
+[ext_resource type="PackedScene" uid="uid://bm6yycuf8vjhk" path="res://Low_Poly_Forest_Pack_Devilswork.Shop_v02/DAE/Low_Poly_Forest_treeRoundTop05.dae" id="1_ri48p"]
+[ext_resource type="Texture2D" uid="uid://daa744obk6mkv" path="res://Low_Poly_Forest_Pack_Devilswork.Shop_v02/tex/treeRound.png" id="2_vtd45"]
+
+[sub_resource type="ORMMaterial3D" id="ORMMaterial3D_c1i0c"]
+albedo_texture = ExtResource("2_vtd45")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4uw2j"]
+size = Vector3(1, 4.07133, 0.87993)
+
+[node name="Branch2" type="StaticBody3D"]
+collision_layer = 2
+collision_mask = 0
+
+[node name="Low_Poly_Forest_treeRoundTop05" parent="." instance=ExtResource("1_ri48p")]
+transform = Transform3D(0.36694, 0, -0.930245, 0, 1, 0, 0.930245, 0, 0.36694, 0, 0, 0)
+
+[node name="bark" parent="Low_Poly_Forest_treeRoundTop05/treeRoundTop05" index="0"]
+material_override = SubResource("ORMMaterial3D_c1i0c")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.302065, 2.03566, 0.0722332)
+shape = SubResource("BoxShape3D_4uw2j")
+
+[editable path="Low_Poly_Forest_treeRoundTop05"]

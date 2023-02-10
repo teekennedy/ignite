@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://ovd6e0kvmgdn"
+path="res://.godot/imported/Tree_2_Summer.obj-c576d2e10c4aa366e7999d376be7cbda.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Tree_2_Summer.obj-c576d2e10c4aa366e7999d376be7cbda.mesh"]
+
+source_file="res://Nature Pack Low Poly By RgsDev/OBJ/Trees/Tree_2_Summer.obj"
+dest_files=["res://.godot/imported/Tree_2_Summer.obj-c576d2e10c4aa366e7999d376be7cbda.mesh", "res://.godot/imported/Tree_2_Summer.obj-c576d2e10c4aa366e7999d376be7cbda.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

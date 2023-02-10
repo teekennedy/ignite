@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://dx47gk4wm66du"]
+
+[ext_resource type="PackedScene" uid="uid://bbv32dv4rdf5n" path="res://LowPoly Environment Pack/Log_1.fbx" id="1_f1bac"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_1g17h"]
+radius = 0.151548
+height = 4.51254
+
+[node name="Log_1" type="StaticBody3D"]
+collision_layer = 2
+collision_mask = 0
+
+[node name="Log_1" parent="." instance=ExtResource("1_f1bac")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0.142877, 0.102771)
+shape = SubResource("CapsuleShape3D_1g17h")

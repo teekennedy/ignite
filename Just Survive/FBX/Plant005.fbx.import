@@ -1,0 +1,30 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://boo6v6hpkox0v"
+path="res://.godot/imported/Plant005.fbx-177005c45ff929e892ef58ff1904db1a.scn"
+
+[deps]
+
+source_file="res://Just Survive/FBX/Plant005.fbx"
+dest_files=["res://.godot/imported/Plant005.fbx-177005c45ff929e892ef58ff1904db1a.scn"]
+
+[params]
+
+nodes/root_type="Node3D"
+nodes/root_name="Scene Root"
+nodes/apply_root_scale=true
+nodes/root_scale=1.0
+meshes/ensure_tangents=true
+meshes/generate_lods=true
+meshes/create_shadow_meshes=true
+meshes/light_baking=1
+meshes/lightmap_texel_size=0.2
+skins/use_named_skins=true
+animation/import=true
+animation/fps=30
+animation/trimming=false
+import_script/path=""
+_subresources={}

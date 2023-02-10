@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dwsrsvl3gka46"
+path="res://.godot/imported/Willow_Tree_Spring.obj-6f37a860eefa2d8dbc5e03eb4a62d7d7.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Willow_Tree_Spring.obj-6f37a860eefa2d8dbc5e03eb4a62d7d7.mesh"]
+
+source_file="res://Nature Pack Low Poly By RgsDev/OBJ/Trees/Willow_Tree_Spring.obj"
+dest_files=["res://.godot/imported/Willow_Tree_Spring.obj-6f37a860eefa2d8dbc5e03eb4a62d7d7.mesh", "res://.godot/imported/Willow_Tree_Spring.obj-6f37a860eefa2d8dbc5e03eb4a62d7d7.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

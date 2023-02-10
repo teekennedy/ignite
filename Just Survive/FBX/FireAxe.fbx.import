@@ -1,0 +1,30 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://do31k0usftpuu"
+path="res://.godot/imported/FireAxe.fbx-d85cf59082f4114da7997739e78e3881.scn"
+
+[deps]
+
+source_file="res://Just Survive/FBX/FireAxe.fbx"
+dest_files=["res://.godot/imported/FireAxe.fbx-d85cf59082f4114da7997739e78e3881.scn"]
+
+[params]
+
+nodes/root_type="Node3D"
+nodes/root_name="Scene Root"
+nodes/apply_root_scale=true
+nodes/root_scale=1.0
+meshes/ensure_tangents=true
+meshes/generate_lods=true
+meshes/create_shadow_meshes=true
+meshes/light_baking=1
+meshes/lightmap_texel_size=0.2
+skins/use_named_skins=true
+animation/import=true
+animation/fps=30
+animation/trimming=false
+import_script/path=""
+_subresources={}

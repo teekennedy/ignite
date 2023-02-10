@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://bd6p02cx1ua1r"]
+
+[ext_resource type="PackedScene" uid="uid://c64k4n3wohtcy" path="res://LowPoly Environment Pack/Rock_6.fbx" id="1_3hgq0"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_u5jf7"]
+radius = 1.67997
+height = 4.17093
+
+[node name="Rock 3" type="StaticBody3D"]
+collision_layer = 4
+collision_mask = 0
+
+[node name="Rock_6" parent="." instance=ExtResource("1_3hgq0")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.808873, 0.587983, 0, -0.587983, 0.808873, 0, 0.282288, -0.530011)
+shape = SubResource("CapsuleShape3D_u5jf7")

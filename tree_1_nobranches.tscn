@@ -1,0 +1,44 @@
+[gd_scene load_steps=9 format=3 uid="uid://ctx2jci6trnra"]
+
+[ext_resource type="PackedScene" uid="uid://dy2iew5nd22lm" path="res://Low_Poly_Forest_Pack_Devilswork.Shop_v02/DAE/Low_Poly_Forest_tree01.dae" id="1_bm64g"]
+[ext_resource type="Texture2D" uid="uid://daa744obk6mkv" path="res://Low_Poly_Forest_Pack_Devilswork.Shop_v02/tex/treeRound.png" id="2_iuaun"]
+
+[sub_resource type="ORMMaterial3D" id="ORMMaterial3D_e8ly0"]
+albedo_texture = ExtResource("2_iuaun")
+
+[sub_resource type="ORMMaterial3D" id="ORMMaterial3D_qhawo"]
+albedo_texture = ExtResource("2_iuaun")
+
+[sub_resource type="Skin" id="Skin_hl5t7"]
+resource_local_to_scene = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wxwi7"]
+render_priority = 4
+
+[sub_resource type="ORMMaterial3D" id="ORMMaterial3D_mjxxp"]
+albedo_texture = ExtResource("2_iuaun")
+
+[sub_resource type="ORMMaterial3D" id="ORMMaterial3D_7k6nv"]
+albedo_texture = ExtResource("2_iuaun")
+
+[node name="Tree1" instance=ExtResource("1_bm64g")]
+
+[node name="leaf" parent="tree01" index="0"]
+visible = false
+material_override = SubResource("ORMMaterial3D_e8ly0")
+
+[node name="leaf_2" parent="tree01" index="1"]
+visible = false
+
+[node name="leaf_3" parent="tree01" index="2"]
+visible = false
+material_override = SubResource("ORMMaterial3D_qhawo")
+skin = SubResource("Skin_hl5t7")
+surface_material_override/0 = SubResource("StandardMaterial3D_wxwi7")
+
+[node name="leaf_4" parent="tree01" index="3"]
+visible = false
+material_override = SubResource("ORMMaterial3D_mjxxp")
+
+[node name="bark" parent="tree01" index="4"]
+material_override = SubResource("ORMMaterial3D_7k6nv")

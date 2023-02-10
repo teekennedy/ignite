@@ -1,0 +1,42 @@
+[gd_scene load_steps=6 format=3 uid="uid://cn2wj27pt3k64"]
+
+[ext_resource type="PackedScene" uid="uid://b6qaixkop84yh" path="res://Just Survive/FBX/Mushroom001.fbx" id="1_id0mb"]
+[ext_resource type="Script" path="res://scenes/FlammableArea.gd" id="2_pha36"]
+
+[sub_resource type="ORMMaterial3D" id="ORMMaterial3D_k1iqs"]
+albedo_color = Color(0.6, 0.380392, 0.203922, 1)
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_0bgan"]
+radius = 0.0503913
+height = 0.214187
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_lw1d0"]
+radius = 0.156796
+height = 0.492361
+
+[node name="Node3D" type="Node3D"]
+
+[node name="mushroom1" type="StaticBody3D" parent="."]
+collision_layer = 2
+collision_mask = 0
+
+[node name="Mushroom001" parent="mushroom1" instance=ExtResource("1_id0mb")]
+
+[node name="Mushroom" parent="mushroom1/Mushroom001/RootNode" index="0"]
+material_override = SubResource("ORMMaterial3D_k1iqs")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="mushroom1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.001793, 0)
+shape = SubResource("CapsuleShape3D_0bgan")
+
+[node name="FlammableArea" type="Area3D" parent="."]
+collision_layer = 2
+script = ExtResource("2_pha36")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="FlammableArea"]
+shape = SubResource("CapsuleShape3D_lw1d0")
+
+[connection signal="body_entered" from="FlammableArea" to="FlammableArea" method="_on_body_entered"]
+[connection signal="body_exited" from="FlammableArea" to="FlammableArea" method="_on_body_exited"]
+
+[editable path="mushroom1/Mushroom001"]

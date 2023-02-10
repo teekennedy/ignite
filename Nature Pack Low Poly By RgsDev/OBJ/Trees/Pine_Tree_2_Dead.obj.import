@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dsl5tw0i2phdn"
+path="res://.godot/imported/Pine_Tree_2_Dead.obj-33cfb903d6cd03193a8c778d6a5a3e5d.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Pine_Tree_2_Dead.obj-33cfb903d6cd03193a8c778d6a5a3e5d.mesh"]
+
+source_file="res://Nature Pack Low Poly By RgsDev/OBJ/Trees/Pine_Tree_2_Dead.obj"
+dest_files=["res://.godot/imported/Pine_Tree_2_Dead.obj-33cfb903d6cd03193a8c778d6a5a3e5d.mesh", "res://.godot/imported/Pine_Tree_2_Dead.obj-33cfb903d6cd03193a8c778d6a5a3e5d.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
