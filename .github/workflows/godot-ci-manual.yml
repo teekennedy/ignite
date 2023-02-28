@@ -1,20 +1,21 @@
 name: build
 
 env:
-  IMAGE_NAME: godot-ci
+  IMAGE_NAME: ignite
 
 on:
   workflow_dispatch:
     inputs:
       version:
         description: 'Version of engine to build e.g. "3.4.4", "3.5"'
+        default: "4.0"
         required: true
         type: string
 
       release_name:
         description: 'Release name, usually "stable", but can also be something like "rc3", "beta1"'
         type: string
-        default: "stable"
+        default: "rc5"
         required: true
 
       godot_platform:
@@ -24,9 +25,9 @@ on:
         required: true
 
       godot_args:
-        description: 'Appends additional arguments to the Godot invocation running the container running. This allows to specify the display driver in Godot 4+. Otherwise empty'
+        description: 'Appends additional arguments to the Godot invocation running used to bootstrap the export cache(?). This allows to specify the display driver in Godot 4+. Otherwise empty'
         type: string
-        default: "--display-driver headless"
+        default: "--headless --quit"
         required: true
 
 
